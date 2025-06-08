@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wedding Invitation</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div id="page1" class="page active">
+        <div class="container">
+            <h1>You're Invited to Our Wedding!</h1>
+            <p class="message">We would be honored to have you join us on our special day.</p>
+            <button id="rsvpYesButton">RSVP Yes 💍</button>
+            <button id="rsvpNoButton">RSVP No 😢</button>
+            <p id="response" class="response"></p>
+        </div>
+    </div>
+
+    <div id="page2" class="page">
+        <div class="container" id="detailsContainer">
+            <!-- Wedding details slides will be dynamically inserted here -->
+            <img id="slideImage" src="" alt="Wedding Slide" class="invitation-image" />
+            <h1 id="slideTitle"></h1>
+            <p id="slideMessage" class="message"></p>
+            <button id="nextButton" style="display:none;">Next</button>
+        </div>
+    </div>
+
+    <div id="page3" class="page">
+        <div class="thank-you-note">
+            <p>Thank you for your response. We look forward to celebrating with you!</p>
+            <div class="chat-box" id="chatBox">
+                <div class="chat-header">Wedding Chat</div>
+                <div class="chat-messages" id="chatMessages"></div>
+                <div class="chat-input">
+                    <input type="text" id="chatInput" placeholder="Type your message..." />
+                    <button id="sendButton">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="bg-music" src="background-music.mp3" loop></audio>
+    <script src="script.js"></script>
+</body>
+</html>
